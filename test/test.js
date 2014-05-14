@@ -6,23 +6,25 @@ describe('ad-params', function(){
     location.__defineGetter__('search', function(){
       return '?special=lkjlk';
     });
-    var id = ads(location.search);
-    assert(null == id);
+    var res = ads(location.search);
+    assert(null == res);
   })
 
   it('should parse btid ad param', function(){
     location.__defineGetter__('search', function(){
       return '?special=lkjlkj&btid=asdfasdfasdf';
     });
-    var id = ads(location.search);
-    assert('asdfasdfasdf' == id);
+    var res = ads(location.search);
+    assert('asdfasdfasdf' === res.id);
+    assert('dataxu' === res.type);
   })
 
   it('should parse urid ad param', function(){
     location.__defineGetter__('search', function(){
       return '?urid=qwerqwer&special=lkjlkj';
     });
-    var id = ads(location.search);
-    assert('qwerqwer' == id);
+    var res = ads(location.search);
+    assert('qwerqwer' === res.id);
+    assert('millennial-media' === res.type);
   })
 });

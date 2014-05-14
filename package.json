@@ -2,7 +2,7 @@
   "name": "ad-params",
   "repo": "segmentio/ad-params",
   "description": "parse and get all utm parameters",
-  "version": "0.0.1",
+  "version": "",
   "dependencies": {},
   "devDependencies": {
     "should": "~3.1.2",
