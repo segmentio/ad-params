@@ -1,0 +1,16 @@
+{
+  "name": "ad-params",
+  "repo": "segmentio/ad-params",
+  "version": "0.0.1",
+  "description": "parse and get all ad parameters",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/querystring": "*"
+  },
+  "development": {
+    "visionmedia/mocha": "*",
+    "component/assert": "*",
+    "yields/gravy": "*"
+  }
+}
