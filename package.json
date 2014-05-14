@@ -1,8 +1,8 @@
 {
   "name": "ad-params",
   "repo": "segmentio/ad-params",
-  "description": "parse and get all utm parameters",
-  "version": "",
+  "description": "parse and get all ad parameters",
+  "version": "0.0.2",
   "dependencies": {},
   "devDependencies": {
     "should": "~3.1.2",
