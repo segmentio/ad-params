@@ -20,4 +20,10 @@ describe('ad-params', function() {
     assert.strictEqual(res.id, 'qwerqwer');
     assert.strictEqual(res.type, 'millennial-media');
   });
+
+  it('should parse clickId ad param', function() {
+    var res = ads('?CLICKID=asd-1234&special=lkjlkj');
+    assert.strictEqual(res.id, 'asd-1234');
+    assert.strictEqual(res.type, 'impactRadius');
+  });
 });
