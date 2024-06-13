@@ -20,4 +20,10 @@ describe('ad-params', function() {
     assert.strictEqual(res.id, 'qwerqwer');
     assert.strictEqual(res.type, 'millennial-media');
   });
+  
+  it('should parse kenshoo ad param', function() {
+    var res = ads('?k_clickid=qwerqwer&special=lkjlkj');
+    assert.strictEqual(res.id, 'qwerqwer');
+    assert.strictEqual(res.type, 'kenshoo');
+  });
 });
